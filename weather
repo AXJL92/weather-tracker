@@ -1,0 +1,25 @@
+import requests
+
+API_KEY = '5c3d428fb7b0814ad4c27bd3d0a0231c'
+CITY = 'London'
+BASE_URL = f'https://api.openweathermap.org/data/2.5/weather?q=LONDON&appid5c3d428fb7b0814ad4c27bd3d0a0231c&units=metrics?'
+
+response = requests.get(BASE_URL)
+if response.status_code == 200:
+    data =response.json()
+    temperature = data['main']
+    ['temp']
+    weather_description = data['weather'][0]['description']
+    humidity = data['main']
+    ['humidity']
+    wind_speed = data['wind']
+    ['speed']
+
+    print(f"Weather in {CITY}:")
+    print(f"Temperature: {temperature}°C")
+    print(f"Weather: {weather_description}")
+    print(f"Humidity: {humidity}%")
+    print(f"Wind Speed: {wind_speed} m/s")
+
+else:
+    print(f"Failed to get weather data. Error code: {response.status_code}")
