@@ -1,6 +1,6 @@
 # Weather Tracker
 
-A simple weather tracking application that fetches real-time weather data using Python and an external API.
+A simple weather-tracking application that fetches real-time weather data using Python and an external API.
 
 ## Features
 
