@@ -22,4 +22,48 @@ A simple weather tracking application that fetches real-time weather data using 
     cd weather-tracker
     ```
 
-2. **Create a virtual environment** (optio
+2. **Create a virtual environment** (optional but recommended):
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the required dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Add your API key**:
+
+    - Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api).
+    - Create a `config.py` file in the root directory and add your API key:
+    
+    ```python
+    # config.py
+    API_KEY = 'your_api_key_here'
+    ```
+
+5. **Run the application**:
+
+    ```bash
+    python weather_tracker.py
+    ```
+
+## Usage
+
+1. **Enter a city or location** when prompted to get the current weather conditions.
+
+2. The application will display:
+   - Temperature
+   - Humidity
+   - General weather description
+
+## Contributing
+
+Feel free to submit issues or contribute to the project via pull requests.
+
+## License
+
+This project is licensed under the MIT License.
