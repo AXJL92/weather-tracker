@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = '5c3d428fb7b0814ad4c27bd3d0a0231c'
+API_KEY = 'ENTER HERE'
 CITY = 'London'
 BASE_URL = f'https://api.openweathermap.org/data/2.5/weather?q=LONDON&appid5c3d428fb7b0814ad4c27bd3d0a0231c&units=metrics?'
 
